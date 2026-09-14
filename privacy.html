@@ -19,7 +19,7 @@
 <div class="wrap">
   <p class="brand">Boardcut</p>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective date: July 3, 2026 · Last updated: July 26, 2026</p>
+  <p class="meta">Effective date: July 3, 2026 · Last updated: September 15, 2026</p>
 
   <div class="summary">
     <strong>Local project data, limited anonymous usage data.</strong> Everything you enter — projects, parts,
@@ -49,6 +49,17 @@
   <p>We use these events only to understand which features are used and where people stop in the app flow so
   we can improve Boardcut. We do not use them for advertising or tracking.</p>
 
+  <p>Each request contains the app identifier (<code>a</code>), app version (<code>v</code>), random
+  installation identifier (<code>d</code>), event name (<code>e</code>), timestamp (<code>t</code>), and a
+  small properties object (<code>p</code>). Current properties contain only fixed internal screen or flow
+  names and, where relevant, an App Store product identifier. They cannot contain project names, dimensions,
+  notes, other user-entered content, or free-form text.</p>
+  <p>Cloudflare, Inc. hosts the endpoint as our infrastructure processor. Our Worker does not store source IP
+  addresses, User-Agent headers, raw event bodies, raw timestamps, or raw installation identifiers. It stores
+  daily aggregate counts and a per-day HMAC-SHA-256 hash of the random identifier, salted with the day and app
+  identifier so it changes each day. Cloudflare may process network metadata to deliver and secure its service
+  under its data-processing terms.</p>
+
   <h2>Export, sharing, and deletion</h2>
   <ul>
     <li><strong>Export / Share</strong>: You can export cut plans as PDF, PNG, or CSV files and share them using
@@ -72,9 +83,35 @@
   knowingly collect personal information from children.</p>
 
   <h2>Third parties</h2>
-  <p>Boardcut has no third-party analytics or advertising SDKs. Anonymous usage events are sent only to the
-  developer’s own server. We do not sell or provide these events to third parties, use them for advertising,
-  or use them to track you across apps or websites.</p>
+  <p>Boardcut has no third-party analytics or advertising SDKs. We use Cloudflare, Inc. only to host the
+  anonymous event endpoint and aggregated database described above. We do not sell these events, provide
+  them to third parties for their own purposes, use them for advertising, or use them to track you across
+  apps or websites.</p>
+
+  <h2>For users in the EU/EEA and UK (GDPR)</h2>
+  <!-- controller postal address: to be added -->
+  <p><strong>Controller.</strong> The controller for the limited usage analytics is Ryosuke Igarashi
+  (Softgrove), Japan. Contact: <a href="mailto:softgrove@duck.com">softgrove@duck.com</a>.</p>
+  <p><strong>Purposes and legal bases.</strong> We process the limited usage events to understand aggregate
+  feature use and improve the app, based on our legitimate interests under Article 6(1)(f) GDPR. Your
+  on-device content is not sent to or processed by us. Purchases are processed by Apple; see
+  <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>. If you contact us, we process the
+  information you send to answer your request, also based on our legitimate interests.</p>
+  <p><strong>Recipients and international transfers.</strong> Cloudflare, Inc. processes the usage events for
+  us as hosting provider on its global network. This may involve transfers outside the EU/EEA or UK,
+  including to the United States, using safeguards such as the European Commission’s Standard Contractual
+  Clauses and the UK transfer addendum where applicable.</p>
+  <p><strong>Retention.</strong> We do not retain raw events. Daily aggregate counts and per-day HMAC hashes are retained in a form not designed to identify a person. The current server code has no
+  automatic deletion period for those aggregate records. On-device content remains until you delete it or
+  the app. Correspondence is kept only as long as reasonably needed to answer and document the request.</p>
+  <p><strong>Your rights.</strong> Subject to applicable law, you may request access, rectification, erasure,
+  restriction, objection, and data portability by emailing
+  <a href="mailto:softgrove@duck.com">softgrove@duck.com</a>. Because the random installation identifier is not linked to your identity and the server does not retain the raw identifier, we may be unable to identify records as relating to you. You may also lodge a complaint with
+  the data-protection supervisory authority in your country of residence or work, or where you believe an
+  infringement occurred.</p>
+  <p>Providing usage events is not a contractual or statutory requirement; the app’s core operation does not
+  depend on a successful telemetry request. We do not use automated decision-making or profiling that
+  produces legal or similarly significant effects.</p>
 
   <h2>Changes</h2>
   <p>We may update this policy. Material changes will be reflected here with a new “Last updated” date.</p>
